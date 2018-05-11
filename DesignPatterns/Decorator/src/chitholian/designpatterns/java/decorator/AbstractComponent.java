@@ -1,9 +1,9 @@
 package chitholian.designpatterns.java.decorator;
 
-public abstract class Component {
-    protected Component component;
+public abstract class AbstractComponent {
+    protected AbstractComponent component;
 
-    public Component(Component component) {
+    public AbstractComponent(AbstractComponent component) {
         this.component = component;
     }
 

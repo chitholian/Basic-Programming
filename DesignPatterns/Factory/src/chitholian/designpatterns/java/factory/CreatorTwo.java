@@ -1,8 +1,8 @@
 package chitholian.designpatterns.java.factory;
 
-public class CreatorOne extends AbstractCreator {
+public class CreatorTwo extends AbstractCreator {
     @Override
     public AbstractProduct produce() {
-        return new ProductOne();
+        return new ProductTwo();
     }
 }

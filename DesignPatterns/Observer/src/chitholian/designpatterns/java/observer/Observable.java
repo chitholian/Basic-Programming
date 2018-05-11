@@ -1,5 +1,8 @@
 package chitholian.designpatterns.java.observer;
 
-public interface Observer {
-    void observe(Observable observable);
+public interface Observable {
+    void notifyObservers();
+    void addObserver(Observer observer);
+    void removeObserver(Observer observer);
+    void setObservationNeeded();
 }

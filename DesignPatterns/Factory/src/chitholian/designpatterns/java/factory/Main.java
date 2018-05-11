@@ -1,15 +1,11 @@
-package chitholian.designpatterns.java.decorator;
+package chitholian.designpatterns.java.factory;
 
 public class Main {
     public static void main(String[] args) {
-        Component component = new ConcreteComponent(null);
-        component = new ConcreteComponent(component);
-        component = new ConcreteComponent(component);
-        component = new ConcreteComponent(component);
-        component = new ConcreteComponent(component);
-        component = new ConcreteComponent(component);
-        component = new ConcreteComponent(component);
-
-        System.out.println("I have decorated " + component.getLevel() + " components.");
+        AbstractCreator creator1 = new CreatorOne(), creator2 = new CreatorTwo();
+        Provider provider = new Provider(creator1);
+        System.out.println("Product price is " + provider.getPriceOfProduct());
+        provider.setCreator(creator2);
+        System.out.println("Product price is " + provider.getPriceOfProduct());
     }
 }

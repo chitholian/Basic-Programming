@@ -1,8 +1,8 @@
 package chitholian.designpatterns.java.factory;
 
-public class ProductOne extends AbstractProduct {
+public class ProductTwo extends AbstractProduct {
     @Override
     public int getPrice() {
-        return 24;
+        return 46;
     }
 }
